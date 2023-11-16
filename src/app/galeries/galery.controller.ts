@@ -88,8 +88,8 @@ export class GaleryController {
     return await this.galeryService.update(id, createGaleryDto, isLogin);
   }
 
-  @Delete()
-  async delete(): Promise<ResponseDto<string, Galeries>> {
-    return null;
+  @Delete(':id')
+  async Delete(@Param('id') id: string): Promise<ResponseDto<string, null>> {
+    return await this.galeryService.Delete(id);
   }
 }

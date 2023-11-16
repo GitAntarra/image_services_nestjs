@@ -77,7 +77,13 @@ export class GaleryService {
     return new ResponseDto('Image text updated', updateImage);
   }
 
-  async delete(): Promise<ResponseDto<string, Galeries>> {
-    return null;
+  async Delete(id: string): Promise<ResponseDto<string, null>> {
+    const Image = await this.galeryRepository.findOne({ where: { id } });
+    if (!Image) {
+      throw new BadRequestException('Not Image Availabel');
+    }
+
+    await this.galeryRepository.delete(id);
+    return new ResponseDto('Delete Image Success', null);
   }
 }

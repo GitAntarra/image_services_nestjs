@@ -8,8 +8,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/GitAntarra/image_services_nestjs/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/GitAntarra/image_services_nestjs/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -34,18 +34,16 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+this application api service for management image, they have title, description and url path image, with scalable clean structure folder sistem
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them.
 
 ```
-Give examples
+$  npm i -g @nestjs/cli
 ```
 
 ### Installing
@@ -55,27 +53,54 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-Give the example
+$ git clone https://github.com/GitAntarra/image_services_nestjs
+$ cd image_services_nestjs
+$ yarn install
 ```
 
-And repeat
+Environment Variable
 
 ```
-until finished
+$ cd .env.example .env
+```
+
+Set Environment File Value
+
+```
+NODE_ENV=development
+BASE_URL=http://localhost
+
+APP_PORT=4000
+
+DB_PORT=3306
+DB_HOST=localhost
+DB_USER=
+DB_PASS=
+DB_NAME=image_galery
+DB_SYNC=true
+
+JWT_KEY=ingDLMRuGe9UKHRNjs7cYckS2yul4lc3s
+JWT_EXP=86400
+```
+
+And Running
+
+```
+$ yarn start:dev
 ```
 
 End with an example of getting some data out of the system or using it for a little demo.
 
-## 🔧 Running the tests <a name = "tests"></a>
+## 🔧 Running the App <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
+Runnning API Documentation By Swagger
 
-### Break down into end to end tests
+### Break down
 
-Explain what these tests test and why
+Visit:
 
 ```
-Give an example
+http://localhost:4001/api
 ```
 
 ### And coding style tests
@@ -96,16 +121,16 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
+- [MySql](https://www.mysql.com/) - Database
+- [NestJs](https://nestjs.com/) - Api Server Framework
+- [swagger](https://swagger.io/) - Api Documentation
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@GitAntarra](https://github.com/GitAntarra) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/GitAntarra/image_services_nestjs/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
