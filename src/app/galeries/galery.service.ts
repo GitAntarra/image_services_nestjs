@@ -50,7 +50,7 @@ export class GaleryService {
         'gallery.id as id',
         'gallery.title as title',
         'gallery.description as description',
-        `CONCAT('${base_url}/', gallery.filename) as url`,
+        `CONCAT('${base_url}/galery/file/', gallery.filename) as url`,
         'gallery.updatedAt as lastupdate',
         'user.firstName as user',
       ])
