@@ -24,6 +24,7 @@ async function bootstrap() {
       scheme: 'bearer',
       bearerFormat: 'JWT',
     })
+    .addServer('images')
     .addServer('')
     .build();
   const document = SwaggerModule.createDocument(app, config, {
